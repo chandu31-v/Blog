@@ -10,7 +10,6 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Header/>}></Route>
-        <Route exact path="/login" element={<Login/>}></Route>
       </Routes>
     </Router>
     </>
