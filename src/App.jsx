@@ -1,12 +1,16 @@
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import Header from "./header_buttons/header";
 
 function App() {
 
   return (
     <>
-      <div>
-        <h1>Blog</h1>
-      </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Header/>}></Route>
+      </Routes>
+    </Router>
     </>
   )
 }
