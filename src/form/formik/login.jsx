@@ -1,7 +1,7 @@
 import React from "react";
 import { useFormik } from "formik";
 import { validate } from "./yupValidate"
-import authService from "../../webapp/account";
+import authService from "../../appWrite/account";
 
 function Login() {
 

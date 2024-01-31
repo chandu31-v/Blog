@@ -1,11 +1,10 @@
+import { Client, Account,ID } from "appwrite";
+import config from "../../config/config"
+
 // 1.create new account
 // 2.login to existing account
 // 3.logout
 // 4.
-
-import { Client, Account,ID } from "appwrite";
-import config from "../../config/config"
-
 
 class AuthService{
 
