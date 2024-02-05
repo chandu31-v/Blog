@@ -9,7 +9,7 @@ function Login() {
     const dispatch = useDispatch()
     const handleClick = () => {
         navigate("/login")
-        dispatch(userLoggedIn())
+        //dispatch(userLoggedIn())
     }
 
     return (<>
