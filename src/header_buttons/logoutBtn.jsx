@@ -1,11 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux";
+import { userLoggedOut } from "../redux/slice/slice";
+import authService from "../../appWrite/account";
 
 function Logout() {
 
+    const dispatch = useDispatch()
     const navigate = useNavigate()
     const handleClick = () => {
-        navigate("/logout")
+        authService.Logout()
+        dispatch(userLoggedOut())
+        navigate("/")
     }
 
     return (<>

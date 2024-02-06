@@ -2,8 +2,11 @@ import React from "react";
 import { useFormik } from "formik";
 import { validate } from "./yupValidate"
 import authService from "../../appWrite/account";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+
+    const navigate = useNavigate()
 
     const createFormik = useFormik({
         initialValues: {
@@ -17,7 +20,8 @@ function Login() {
             try {
                 //console.log(values.name,values.email,values.password)
                 authService.createAccount(values.name,values.email,values.password)
-                action.resetForm()
+                navigate("/")
+
             } catch (err) {
                 throw err
             }
