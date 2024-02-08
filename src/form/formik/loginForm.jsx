@@ -32,7 +32,7 @@ function Login() {
         <div className="flex flex-col items-center">
             <h1>Sign Up</h1>
             {/* Forms */}
-            <div className=" border-2 border-gray-500 rounded-3xl p-10">
+            <div className="border-2 border-gray-500 rounded-3xl p-10">
                 <form onSubmit={createFormik.handleSubmit}>
                     {/* Name */}
                     <div className="flex m-1">

@@ -4,7 +4,6 @@ import config from "../../config/config"
 // 1.create new account
 // 2.login to existing account
 // 3.logout
-// 4.
 
 class AuthService{
 

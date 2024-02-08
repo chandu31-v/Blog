@@ -62,6 +62,7 @@ class Database {
                 configEnv.collection_id,
                 post_id
             )
+            return post_data
         } catch (err) {
             throw err
         }
