@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import { validate } from "./yupValidate"
 import authService from "../../appWrite/account";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
 
@@ -29,10 +29,10 @@ function Login() {
     })
 
     return (<>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mt-16">
             <h1>Sign Up</h1>
             {/* Forms */}
-            <div className="border-2 border-gray-500 rounded-3xl p-10">
+            <div className="border-2 border-gray-500 rounded-3xl p-10 mt-10">
                 <form onSubmit={createFormik.handleSubmit}>
                     {/* Name */}
                     <div className="flex m-1">
@@ -82,9 +82,14 @@ function Login() {
                     </div>
 
                     <div className="flex justify-center">
-                        <button type="submit" className="border-2 border-black px-2 rounded-md">Login</button>
+                        <button type="submit" className="border-[1px] border-black px-2 rounded-md">Sigin</button>
                     </div>
                 </form>
+                <div>
+                    <Link to="/login" className="flex justify-end mt-2">
+                        <p className="text-sm text-blue-600">already have account?</p>
+                    </Link>
+                </div>
 
             </div>
         </div>
